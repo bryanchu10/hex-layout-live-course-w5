@@ -1,0 +1,79 @@
+// assignment.html
+
+.assignment-reply {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s linear, visibility 0.15s linear;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  textarea {
+    height: 170px;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// admin.html
+
+.admin-addBtn:hover {
+  color: $primary;
+}
+
+.admin-table {
+  tbody {    
+    tr:hover{
+      background-color: $light;
+    }
+    
+    td:nth-child(1){
+      width: 110px;
+      min-width: 50px;
+    }
+    
+    td:nth-child(4){
+      width: 150px;
+    }
+  }
+  
+  .arrow_downward {
+    font-size: 18px;
+  }
+}
+
+.admin-pagination {
+  .page-link {
+    color: $dark;
+  }
+
+  .pagination {
+    a {
+      padding: 6px 12px;
+    }
+    .previous,
+    .next {
+      padding: 4px;
+      color: $primary;
+    }
+  }
+}
+
+.admin-custom-select {
+  background: #fff url(../images/expand_more-black-24dp.svg) no-repeat right 1rem center/24px 24px;
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+.date {
+  font-size: 14px;
+}

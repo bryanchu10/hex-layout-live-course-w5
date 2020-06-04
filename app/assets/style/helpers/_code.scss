@@ -1,0 +1,16 @@
+// Inline code
+code {
+  display: inline-block;
+  @include font-size($code-font-size);
+  color: $green;
+  background-color: $light;
+  word-wrap: break-word;
+  border-radius: 2px;
+  padding-left: .25rem;
+  padding-right: .25rem;
+
+  // Streamline the style when inside anchors to avoid broken underline and more
+  a > & {
+    color: inherit;
+  }
+}

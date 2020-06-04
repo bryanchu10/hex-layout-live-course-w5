@@ -7,53 +7,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="d-flex">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+      <aside class="sidebar sticky-top d-flex flex-column bg-light vh-100 pt-5 pb-6">
 
-    <%- contents %>
+        <h1 class="logo mb-6 ml-6">
+          <a href="#" class="logo__img" style="background-image: url(./assets/images/logo-ANSWER.svg); width: 151px;">
+            ANSWER
+          </a>
+        </h1>
 
-    <footer class="footer">
-      footer
-    </footer>
+        <div class="list-group-flush list-unstyled">
+          
+          <a href="dashboard.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4 disabled">
+            <i class="material-icons align-bottom mr-3">assessment</i>Dashboard
+          </a>
+        
+        
+          <a href="question.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4 disabled">
+            <i class="material-icons align-bottom mr-3">question_answer</i>Question
+          </a>
+        
+        
+          <a href="assignment.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4">
+            <i class="material-icons align-bottom mr-3">assignment</i>Assignment
+          </a>
+        
+        
+          <a href="course.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4 disabled">
+            <i class="material-icons align-bottom mr-3">video_library</i>Course
+          </a>
+        
+        
+          <a href="admin.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4">
+            <i class="material-icons align-bottom mr-3">supervisor_account</i>Admin
+          </a>
+        
+        
+          <a href="setting.html" class="list-group-item list-group-item-action font-weight-bold border-bottom-0 py-1 pl-6 mb-4 disabled">
+            <i class="material-icons align-bottom mr-3">settings</i>Settings
+          </a>
+          
+        </div>
+        <!-- admin -->
+        <div class="media mt-auto ml-6">
+          <div class="avatar mr-4" style="background-image: url(https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80);"></div>
+          <div class="media-body">
+            <h6 class="font-weight-bold my-0">Andy Chen</h6>
+            <p class="text-secondary">andy0401@mail.com</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="flex-fill py-6 px-5">
+        <%- contents %>
+      </main>
+    </div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

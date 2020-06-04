@@ -1,0 +1,22 @@
+// sidebar
+
+.sidebar {
+  .list-group-item.active {
+    margin-top: 0;
+    border-top: 0;
+    color: $primary;
+    background-color: $light;
+    box-shadow: inset 4px 0 0 $primary;
+  }
+  .list-group-item:hover {
+    background-color: #CDDDCD;
+  }
+
+  .media {
+    margin-right: 80px;
+  }
+
+  .media-body p {
+    font-size: 14px;
+  }
+}

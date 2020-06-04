@@ -1,0 +1,15 @@
+// Cooperate with custom JS
+
+.icon-js-star {
+  color: $dark;
+  
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btn-js-reply {
+  &:focus {
+    box-shadow: none;
+  }
+}

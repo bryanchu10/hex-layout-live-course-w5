@@ -1,0 +1,222 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<div class="container">
+  <div class="d-flex align-items-center mb-6">
+    <h4 class="font-weight-bold mr-7">
+      Assignment
+    </h4>
+    <!-- Course select -->
+    <div class="dropdown">
+      <button type="button" class="btn d-flex font-weight-bold" id="dropdownMenuOffset" data-toggle="dropdown">
+        All Courses<i class="material-icons text-primary ml-1">expand_more</i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Course 1</a>
+        <a class="dropdown-item" href="#">Course 2</a>
+        <a class="dropdown-item" href="#">Course 3</a>
+      </div>
+    </div>
+    <a href="#" class="ml-auto mr-5"><i class="material-icons align-middle">search</i></a>
+    <a href="#"><i class="material-icons align-middle">notifications_active</i></a>
+  </div>
+  <!-- Question main part -->
+  <div class="row">
+    <div class="col-4">
+      <!-- Question select -->
+      <div class="dropdown">
+        <button type="button" class="btn d-flex font-weight-bold border-0 pl-0" id="dropdownMenuOffset" data-toggle="dropdown">
+          All (4)<i class="material-icons text-primary ml-1">expand_more</i>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Unread</a>
+          <a class="dropdown-item" href="#">Read</a>
+          <a class="dropdown-item" href="#">Solved</a>
+        </div>
+      </div>
+      <!-- List group -->
+      <div class="list-group" id="myList" role="tablist">
+        <a class="list-group-item list-group-item-action d-flex justify-content-between active" data-toggle="list" href="#quest1" role="tab">
+          <div class="d-flex flex-column w-75">
+            <small>
+              Chapter Assignment 2
+            </small>
+            <h6 class="font-weight-bold text-truncate mb-0">
+              Please check this file for me, thanks!
+            </h6>
+          </div>
+          <div class="d-flex flex-column align-items-end">
+            <small>
+              4 hrs ago
+            </small>
+            <small class="text-secondary">
+              Emily Wang
+            </small>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between" data-toggle="list" href="#quest2" role="tab">
+          <div class="d-flex flex-column w-75">
+            <small>
+              Chapter Assignment 1
+            </small>
+            <h6 class="font-weight-bold text-truncate mb-0">
+              My Homework
+            </h6>
+          </div>
+          <div class="d-flex flex-column align-items-end">
+            <small>
+              12 hrs ago
+            </small>
+            <small class="text-secondary">
+              David Xu
+            </small>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between " data-toggle="list" href="#quest3" role="tab">
+          <div class="d-flex flex-column w-75">
+            <small>
+              Final Assignment
+            </small>
+            <h6 class="font-weight-bold text-truncate mb-0">
+              Have a problem with this function
+            </h6>
+          </div>
+          <div class="d-flex flex-column align-items-end">
+            <small>
+              18 hrs ago
+            </small>
+            <small class="text-secondary">
+              Tony Wei
+            </small>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between " data-toggle="list" href="#quest4" role="tab">
+          <div class="d-flex flex-column w-75">
+            <small>
+              Final Assignment
+            </small>
+            <h6 class="font-weight-bold text-truncate mb-0">
+              Did I do it right?
+            </h6>
+          </div>
+          <div class="d-flex flex-column align-items-end">
+            <small>
+              19 hrs ago
+            </small>
+            <small class="text-secondary">
+              Christina Lin
+            </small>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-8">
+      <!-- Tab panes -->
+      <div class="tab-content position-relative">
+        <div class="tab-pane fade show active" id="quest1" role="tabpanel">
+          <small class="d-block text-secondary text-right my-2">2 comments</small>
+          <div class="card mb-4">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column">
+                <small>Chapter Assignment 2 / HTML&CSS</small>
+                <h6 class="font-weight-bold mb-0">
+                  Please check this file for me, thanks!
+                </h6>
+              </div>
+              <a href="#">
+                <i class="material-icons align-middle">more_vert</i>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <div class="avatar mr-4" style="background-image: url(https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80);"></div>
+                <div class="media-body border-bottom mb-4">
+                  <h6 class="font-weight-bold mb-1">Emily Wang</h6>
+                  <small class="d-block text-secondary mb-4">10:38 AM (4 hours ago)</small>
+                  <p>
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                    What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border font-weight-bold mb-4">
+                    <i class="material-icons align-middle mr-2">attach_file</i><span class="align-middle">HW-2-David.zip</span>
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <div class="avatar mr-4" style="background-image: url(https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80);"></div>
+                <div class="media-body">
+                  <div class="d-flex align-items-start">
+                    <div>
+                      <h6 class="font-weight-bold mb-1">Andy Chen (You)</h6>
+                      <small class="d-block text-secondary mb-4">13:24 AM (1 hours ago)</small>
+                    </div>
+                    <a href="#" class="icon-js-star ml-auto mr-5"><i class="material-icons">star_border</i></a>
+                    <a href="#"><i class="material-icons">edit</i></a>
+                  </div>
+                  <p>
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                  </p>
+                  <p>
+                    You can:
+                  </p>
+                  <ul class="mb-0">
+                    <li>
+                      adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or
+                    </li>
+                    <li>
+                      change the <code>display</code> so it isn’t inline.
+                    </li>               
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <a href="#" class="mr-5"><i class="material-icons align-middle">chevron_left</i></a>
+            <a href="#"><i class="material-icons align-middle">chevron_right</i></a>
+            <a class="btn btn-outline-primary btn-js-read font-weight-bold px-6 ml-auto mr-4" href="#" role="button">Mark as read</a>
+            <a class="btn-js-reply btn btn-primary px-6" href="#" role="button">Reply</a>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="quest2" role="tabpanel">...</div>
+        <div class="tab-pane fade" id="quest3" role="tabpanel">...</div>
+        <div class="tab-pane fade" id="quest4" role="tabpanel">...</div>
+        <!-- Reply -->
+        <form action="">
+          <div class="assignment-reply card position-absolute">
+            <div class="card-header d-flex bg-light align-items-center">
+              <div class="dropdown mr-3">
+                <button class="btn d-flex font-weight-bold py-1 px-0 mr-4" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                  Body Text<i class="material-icons ml-2">arrow_drop_down</i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Text 1</a>
+                  <a class="dropdown-item" href="#">Text 2</a>
+                  <a class="dropdown-item" href="#">Text 3</a>
+                </div>
+              </div>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">format_bold</i></a>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">format_italic</i></a>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">format_list_bulleted</i></a>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">format_list_numbered</i></a>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">insert_photo</i></a>
+              <a href="#" class="mr-5"><i class="material-icons align-middle">insert_link</i></a>
+              <a href="#"><i class="material-icons align-middle">code</i></a>
+            </div>
+            <div class="card-body">
+              <textarea class="w-100 border-0" id="validationTextarea" name="reply" placeholder="Reply an answer…" required></textarea>
+            </div>
+            <div class="card-footer border-top-0 bg-transparent text-right">
+              <button class="btn-js-cancel btn btn-outline-primary font-weight-bold px-6 mr-2">Cancel</button>
+              <button type="submit" class="btn btn-primary px-6">Reply</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
